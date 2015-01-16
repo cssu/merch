@@ -10,6 +10,10 @@ PRODUCTS = {
     'Travel Mug' => %w(white)
 }
 
+get '/' do
+  'It\'s working!'
+end
+
 post '/reservations.json' do
   content_type :json
 
