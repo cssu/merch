@@ -1,0 +1,8 @@
+# Private key
+*.p12
+
+# Lucky Marmot Paw
+*.paw
+
+# autoenv
+.env
