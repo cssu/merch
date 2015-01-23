@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/param'
+require 'sinatra/cross_origin'
 require 'json'
 require 'google_drive'
 
@@ -9,6 +10,10 @@ PRODUCTS = {
     'T-Shirt' => %w(black blue grey),
     'Travel Mug' => %w(white)
 }
+
+configure do
+  enable :cross_origin
+end
 
 get '/' do
   'It\'s working!'
